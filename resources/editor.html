@@ -4,8 +4,23 @@
 <title>==Editor== --CodeWithFiles--</title>
 <meta name="description" content="HTML editor">
 <link href="css/default.css" rel="stylesheet">
+<style>
+  input {
+    font: monospace;
+  }
+</style>
 </head>
 <body>
 <h1>HTML editor</h1>
+<input id="name">
+<input id="code">
+<button onClick="myFunction">Result</button>
+<html id="html"></html>
+<script>
+function myFunction {
+  var code = document.getElementById("code").value
+  document.getElementById("html").innerHTML = code
+}
+</script>
 </body>
 </html>
